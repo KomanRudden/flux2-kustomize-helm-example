@@ -5,19 +5,18 @@ metadata:
   namespace: podinfo
 spec:
   chart:
-    values:
-      replicaCount: 2
-      resources:
-        limits:
-          memory: 256Mi
-        requests:
-          cpu: 100m
-          memory: 64Mi
     spec:
       version: ">=1.0.0-alpha"
   test:
     enable: false
   values:
+    replicaCount: 2
+    resources:
+      limits:
+        memory: 256Mi
+      requests:
+        cpu: 100m
+        memory: 64Mi  
     ingress:
       hosts:
         - host: podinfo.staging
