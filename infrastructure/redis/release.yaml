@@ -19,9 +19,3 @@ spec:
   valuesFrom:
     - kind: ConfigMap
       name: redis-values
-    - kind: Secret
-      name: redis-auth
-      valuesRef: password
-      targetPath: password      
-  values:
-    usePassword: true
