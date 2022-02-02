@@ -7,6 +7,13 @@ spec:
   chart:
     spec:
       version: ">=1.0.0-alpha"
+      replicaCount: 2
+      resources:
+        limits:
+          memory: 256Mi
+        requests:
+          cpu: 100m
+          memory: 64Mi
   test:
     enable: false
   values:
