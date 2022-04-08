@@ -10,7 +10,7 @@ spec:
   test:
     enable: false
   values:
-    replicaCount: 5
+    replicaCount: 2
     resources:
       limits:
         memory: 256Mi
