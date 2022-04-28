@@ -1,0 +1,14 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: msteams-info-alert
+  namespace: flux-system
+spec:
+  providerRef:
+    name: msteams
+  eventSeverity: info
+  eventSources:
+    - kind: GitRepository
+      name: '*'
+    - kind: Kustomization
+      name: '*'
