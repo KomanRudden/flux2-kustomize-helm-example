@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: podinformation
 resources:
   - ../base/podinfo
+  - koman-secret.yaml
 patchesStrategicMerge:
   - podinfo-values.yaml
-  - koman-secret.yaml
