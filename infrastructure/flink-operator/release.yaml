@@ -14,5 +14,5 @@ spec:
   interval: 10m0s
   values:
     image:
-      repository: nexus.bmwgroup.net/apache/flink-kubernetes-operator
+      repository: apache/flink-kubernetes-operator
 
