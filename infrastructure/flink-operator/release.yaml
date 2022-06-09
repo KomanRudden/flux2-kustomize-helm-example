@@ -14,5 +14,5 @@ spec:
   interval: 10m0s
   values:
     image:
-      repository: downloads.apache.org/flink/flink-kubernetes-operator
+      repository: https://downloads.apache.org/flink/flink-kubernetes-operator-1.0.0
 
