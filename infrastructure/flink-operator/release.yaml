@@ -1,0 +1,18 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: flink-kubernetes-operator
+spec:
+  chart:
+    spec:
+      chart: flink-kubernetes-operator
+      sourceRef:
+        kind: HelmRepository
+        name: flink-operator
+        namespace: flux-system
+      version: 0.1.0
+  interval: 10m0s
+  values:
+    image:
+      repository: nexus.bmwgroup.net/apache/flink-kubernetes-operator
+
