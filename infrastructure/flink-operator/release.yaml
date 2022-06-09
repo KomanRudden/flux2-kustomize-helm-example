@@ -10,9 +10,9 @@ spec:
         kind: HelmRepository
         name: flink-operator
         namespace: flux-system
-      version: 0.1.0
+      version: 1.0.0
   interval: 10m0s
   values:
     image:
-      repository: https://downloads.apache.org/flink/flink-kubernetes-operator-1.0.0
+      repository: downloads.apache.org/flink/flink-kubernetes-operator-1.0.0
 
